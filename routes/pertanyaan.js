@@ -7,7 +7,6 @@ router.get("/:id", async (req, res) => {
 	const id = req.params.id;
 	const pertanyaan = await ListPertanyaan.findAll({
 		attributes: [
-			"id_ruangan",
 			"pertanyaan1",
 			"pertanyaan2",
 			"pertanyaan3",
