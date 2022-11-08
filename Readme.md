@@ -43,8 +43,7 @@ Field | Description |
 
 Command | Usage | Params  | Example | Description |
 --- | --- | --- | --- | --- | 
-GET | `/ruangan/:id` | `id : Ruangan id` | `/ruangan/R01` | Get information for id that Ruangan | 
-GET | `/pertanyaan/:id` | `id: Ruangan id` | `/pertanyaan/R01` | Get question for id that Ruangan | 
+GET | `/ruangan/:id` | `id : Ruangan id` | `/ruangan/R01` | Get information and question for Ruangan id | 
 GET | `/jawaban` | - | `/jawaban` | Get all the answer | 
-GET | `/jawaban/:id` | `id: Ruangan id` | `/jawaban/R01` | Get the answer for id that Ruangan | 
+GET | `/jawaban/:id` | `id: Ruangan id` | `/jawaban/R01` | Get the answer for Ruangan id | 
 POST | `/jawaban/` | - | `/jawaban/{DataJson}` | Post the answer | 
