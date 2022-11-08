@@ -7,7 +7,7 @@ const { ListJawaban } = require("../models");
 const v = new Validator();
 
 router.get("/", async (req, res) => {
-	const ruangan = await ListJawaban.findAll({
+	const jawaban = await ListJawaban.findAll({
 		attributes: [
 			"jawaban1",
 			"jawaban2",
@@ -25,7 +25,34 @@ router.get("/", async (req, res) => {
 
 	return res.status(200).send({
 		status: "success",
-		data: ruangan,
+		data: jawaban,
+	});
+});
+
+router.get("/:id", async (req, res) => {
+	const id = req.params.id;
+	const jawaban = await ListJawaban.findAll({
+		attributes: [
+			"jawaban1",
+			"jawaban2",
+			"jawaban3",
+			"jawaban4",
+			"jawaban5",
+			"jawaban6",
+			"jawaban7",
+			"jawaban8",
+			"jawaban9",
+			"jawaban10",
+            "createdAt",
+		],
+		where: {
+			id_ruangan: id,
+		},
+	});
+
+	return res.status(200).send({
+		status: "success",
+		data: jawaban,
 	});
 });
 
@@ -48,13 +75,13 @@ router.post('/', async (req, res) => {
 
     if(validate.length) {
         return res.status(400).send({
-            status: "success",
+            status: "failed",
             message: validate,
         });
     }
 
     await ListJawaban.create(req.body);
-    res.send({
+    res.status(200).send({
 		status: "success",
 		message: 'Jawaban Tersimpan',
 	});
