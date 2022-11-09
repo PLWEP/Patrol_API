@@ -9,6 +9,7 @@ const v = new Validator();
 router.get("/", async (req, res) => {
 	const jawaban = await ListJawaban.findAll({
 		attributes: [
+			"id_ruangan",
 			"jawaban1",
 			"jawaban2",
 			"jawaban3",
@@ -33,6 +34,7 @@ router.get("/:id", async (req, res) => {
 	const id = req.params.id;
 	const jawaban = await ListJawaban.findAll({
 		attributes: [
+			"id_ruangan",
 			"jawaban1",
 			"jawaban2",
 			"jawaban3",
@@ -56,7 +58,7 @@ router.get("/:id", async (req, res) => {
 	});
 });
 
-router.post('/', async (req, res) => {
+router.post('/:id', async (req, res) => {
     const schema = {
         id_ruangan : 'string',
         pertanyaan1 : 'string|optional',
