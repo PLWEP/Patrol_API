@@ -53,6 +53,18 @@ module.exports = {
         type : Sequelize.TEXT,
         allowNull: true,
       },
+      pertanyaan11 : {
+        type : Sequelize.TEXT,
+        allowNull: true,
+      },
+      pertanyaan12 : {
+        type : Sequelize.TEXT,
+        allowNull: true,
+      },
+      pertanyaan13 : {
+        type : Sequelize.TEXT,
+        allowNull: true,
+      },
 		});
 	},
 

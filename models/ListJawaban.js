@@ -52,6 +52,18 @@ module.exports = (sequelize, DataTypes) => {
 				type: DataTypes.TEXT,
 				allowNull: true,
 			},
+			jawaban11: {
+				type: DataTypes.TEXT,
+				allowNull: true,
+			},
+			jawaban12: {
+				type: DataTypes.TEXT,
+				allowNull: true,
+			},
+			jawaban13: {
+				type: DataTypes.TEXT,
+				allowNull: true,
+			},
 			createdAt: {
 				type: DataTypes.DATE,
 				allowNull: false,

@@ -20,6 +20,9 @@ router.get("/", async (req, res) => {
 			"jawaban8",
 			"jawaban9",
 			"jawaban10",
+			"jawaban11",
+			"jawaban12",
+			"jawaban13",
             "createdAt",
 		]
 	});
@@ -45,6 +48,9 @@ router.get("/:id", async (req, res) => {
 			"jawaban8",
 			"jawaban9",
 			"jawaban10",
+			"jawaban11",
+			"jawaban12",
+			"jawaban13",
             "createdAt",
 		],
 		where: {
@@ -71,6 +77,9 @@ router.post('/:id', async (req, res) => {
         pertanyaan8 : 'string|optional',
         pertanyaan9 : 'string|optional',
         pertanyaan10 : 'string|optional',
+        pertanyaan11 : 'string|optional',
+        pertanyaan12 : 'string|optional',
+        pertanyaan13 : 'string|optional',
     }
 
     const validate = v.validate(req.body, schema);

@@ -54,6 +54,18 @@ module.exports = {
 				type: Sequelize.TEXT,
 				allowNull: true,
 			},
+			jawaban11: {
+				type: Sequelize.TEXT,
+				allowNull: true,
+			},
+			jawaban12: {
+				type: Sequelize.TEXT,
+				allowNull: true,
+			},
+			jawaban13: {
+				type: Sequelize.TEXT,
+				allowNull: true,
+			},
 			createdAt: {
 				type: Sequelize.DATE,
 				allowNull: false,

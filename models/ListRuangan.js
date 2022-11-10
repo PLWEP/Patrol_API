@@ -52,6 +52,18 @@ module.exports = (sequelize, DataTypes) => {
 				type: DataTypes.TEXT,
 				allowNull: true,
 			},
+			pertanyaan11: {
+				type: DataTypes.TEXT,
+				allowNull: true,
+			},
+			pertanyaan12: {
+				type: DataTypes.TEXT,
+				allowNull: true,
+			},
+			pertanyaan13: {
+				type: DataTypes.TEXT,
+				allowNull: true,
+			},
 		},
 		{
 			tableName: "list_ruangan",

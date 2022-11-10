@@ -19,6 +19,9 @@ router.get("/:id", async (req, res) => {
 			"pertanyaan8",
 			"pertanyaan9",
 			"pertanyaan10",
+			"pertanyaan11",
+			"pertanyaan12",
+			"pertanyaan13",
 		],
 		where: {
 			id: id,
